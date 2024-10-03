@@ -1,22 +1,38 @@
-const resolvedPromise = () => {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            let success ={'message': 'resolved success!'}
-            resolve(success);
-            console.log(success)
-        }, 500);
-    });
-}
+// const resolvedPromise = () => {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             let success ={'message': 'resolved success!'}
+//             resolve(success);
+//             console.log(success)
+//         }, 500);
+//     });
+// }
 
-const rejectedPromise = () => {
-    return new Promise((_, reject) => {
-        setTimeout(() => {
-            reject(new Error('error: rejected promise!'));
-        }, 500);
-    });
-}
+const resolvedPromise = new Promise((resolve)=>{
+    setTimeout(()=>{
+        let success ={'message': 'resolved success!'}
+        resolve(success);
+    }, 500)
+})
 
-resolvedPromise()
+const rejectedPromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        reject(new Error("{ error: delayed exception}" ));
+    }, 500);
+})
+
+
+resolvedPromise.then((res)=>{
+    console.log(res)
+})
+
+
+rejectedPromise.then((res)=>{
+    console.log(res)
+})
+.catch((error)=>{
+    console.error(error.message)
+})
 
 // // Call resolvedPromise and handle the result
 // resolvedPromise()
