@@ -9,8 +9,8 @@ function removeLogs(){
         const fileName = `log${i}.txt`;
 
         if(fs.existsSync(fileName)){
-            fs.rm(`log${i}.txt`, { recursive: true, force: true }, (err) => {
-                if (err) {
+            fs.rm(`log${i}.txt`, { recursive: true, force: true }, (e) => {
+                if (e) {
                     console.error(`Cannot delete`);
                 } else {
                     console.log(`${fileName} is deleted!`);

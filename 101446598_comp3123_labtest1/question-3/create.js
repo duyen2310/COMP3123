@@ -7,8 +7,8 @@ function createLog(){
     if (!fs.existsSync(folderNamepath)) {
         fs.mkdirSync(folderNamepath);
     }
-    } catch (err) {
-    console.error(err);
+    } catch (e) {
+    console.error(e);
     }
 
     process.chdir(folderNamepath);
