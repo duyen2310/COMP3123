@@ -1,0 +1,14 @@
+{
+  "name": "101446598_comp3123_assignment1",
+  "version": "1.0.0",
+  "description": "Full Stack Development Assignment 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mia Truong",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
