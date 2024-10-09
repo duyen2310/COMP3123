@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const router = express.Router();
-const person=require('./user.json')
+const person=require('../101446598_COMP3123_exec5/user.json')
 app.use(express.json());
 
 /*
