@@ -1,14 +1,25 @@
 {
   "name": "101446598_comp3123_assignment1",
   "version": "1.0.0",
-  "description": "Full Stack Development Assignment 1",
+  "description": "Assignment 1",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duyen2310/COMP3123.git"
   },
   "author": "Mia Truong",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duyen2310/COMP3123/issues"
+  },
+  "homepage": "https://github.com/duyen2310/COMP3123#readme",
   "dependencies": {
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "mongoose": "^8.7.1",
+    "nodemon": "^3.1.7"
   }
 }
