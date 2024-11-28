@@ -7,6 +7,7 @@ view the current weather conditions for any city
 My API is OpenWeather which is sending weather information about the city you want to check.
 
 
+![Alt Text](./1.png)
 
 
     
