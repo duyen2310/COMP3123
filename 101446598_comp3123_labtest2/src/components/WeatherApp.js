@@ -104,14 +104,15 @@ const WeatherForecast = () => {
         </div>
     );
 };
-
 const styles = {
     container: {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
         minHeight: "100vh",
-        backgroundColor: "#1E213A",
+        background: "url('https://www.patternpictures.com/wp-content/uploads/Small-cloudy-formations-on-a-clear-sky-patternpictures-2913.jpg'), linear-gradient(to bottom, #1E213A, #3C47E9)", 
+        backgroundSize: "cover", // To make sure the image covers the entire background
+        backgroundPosition: "center center", // To center the image
         color: "white",
         fontFamily: "Arial, sans-serif",
         flexDirection: "column",
@@ -219,4 +220,5 @@ const styles = {
         backgroundColor: "#FF6B6B",
     },
 };
+
 export default WeatherForecast; 
